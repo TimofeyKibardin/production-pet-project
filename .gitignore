@@ -12,7 +12,7 @@ pnpm-lock.yaml
 # Build output
 # ========================
 dist/
-build/
+/build/
 coverage/
 *.tsbuildinfo
 
