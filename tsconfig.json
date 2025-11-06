@@ -1,0 +1,27 @@
+{
+    "compilerOptions": {
+        // Куда производится сборка (собираем с webpack все равно)
+        "outDir": "./dist/",
+        // Подсвечивает все места, где не указан тип
+        // Можно явно писать тип any
+        "noImplicitAny": true,
+        // Модульная система
+        "module": "ESNext",
+        // В какой ES будем скомпилирован код
+        "target": "es6",
+        "jsx": "react-jsx",
+        "allowJs": true,
+        "moduleResolution": "node",
+        // Для абсолютного импорта
+//        "baseUrl": ".",
+        // Позволяет работать с пакетами, которые используют commonjs
+        "esModuleInterop": true,
+        // Позволяет использовать дефолтный импорт
+        "allowSyntheticDefaultImports": true
+    },
+    "ts-node": {
+        "compilerOptions": {
+            "module": "CommonJS"
+        }
+    }
+}

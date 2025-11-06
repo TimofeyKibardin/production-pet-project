@@ -1,0 +1,71 @@
+# ========================
+# Node & dependencies
+# ========================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+pnpm-lock.yaml
+
+# ========================
+# Build output
+# ========================
+dist/
+build/
+coverage/
+*.tsbuildinfo
+
+# ========================
+# IDE / Editors
+# ========================
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.DS_Store
+
+# ========================
+# Environment files
+# ========================
+.env
+.env.development.local
+.env.test.local
+.env.production.local
+
+# ========================
+# OS-specific junk
+# ========================
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.log
+
+# ========================
+# Generated assets
+# ========================
+*.css.map
+*.js.map
+*.bundle.js
+*.bundle.js.map
+*.hot-update.*
+
+# ========================
+# Optional cache folders
+# ========================
+.cache/
+.tmp/
+.eslintcache/
+stylelintcache/
+babel-cache/
+tsconfig.tsbuildinfo
+
+# ========================
+# Custom project paths
+# ========================
+public/*.html
+!public/index.html
