@@ -6,13 +6,14 @@ import './styles/index.scss'
 import { AboutPageAsync } from "./pages/AboutPage/AboutPage.async";
 import { MainPageAsync } from "./pages/MainPage/MainPage.async";
 import { useTheme } from "./theme/useTheme";
+import { classNames } from "./helpers/classNames/classNames";
 
 
 const App = () => {
     // Хук для переключения темы
     const { theme, toggleTheme } = useTheme();
     return (
-        <div className={`app ${theme}`}>
+        <div className={classNames('app', {}, [theme])}>
             {/*Переключение темы*/}
             <button onClick={toggleTheme}>TOGGLE</button>
             {/*Ссылки для перехода с одной страницы на другую*/}
