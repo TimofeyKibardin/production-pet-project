@@ -1,0 +1,31 @@
+.Sidebar {
+    // Высота сайдбара
+    height: calc(100vh - var(--navbar-height));
+    // Ширина сайдбара
+    width: var(--sidebar-width);
+
+    // Инвертированный цвет бэкграунда
+    background-color: var(--inverted-bg-color);
+
+    // Позиционирование
+    position: relative;
+
+    // Переход
+    transition: width 0.3s
+}
+
+.collapsed {
+    // Ширина сайдбара
+    width: var(--sidebar-width-collapsed);
+}
+
+.switchers {
+    position: absolute;
+    bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.lang {
+    margin-left: 20px;
+}

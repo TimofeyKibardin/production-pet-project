@@ -7,6 +7,8 @@ export function buildDevServer(options: BuildOptions): DevServerConfiguration {
         open: true,
         // перенаправляет все запросы к корневому каталогу,
         // когда происходит ошибка запроса
-        historyApiFallback: true
+        historyApiFallback: true,
+        //
+        hot: true,
     }
 }

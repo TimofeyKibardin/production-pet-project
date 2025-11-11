@@ -1,0 +1,20 @@
+.app.dark {
+    // Цвет бэкграунда
+    --bg-color: #1e1e2f;
+    // Инвертированный цвет бэкграунда
+    --inverted-bg-color: #f5f6fa;
+
+    // Главный цвет шрифта
+    --primary-color: #f5f5f5;
+    // Второстепенный цвет шрифта
+    --secondary-color: #c5c6ca;
+
+    // Инвертированный главный цвет шрифта
+    --inverted-primary-color: #1c1e21;
+    // Инвертированный второстепенный цвет шрифта
+    --inverted-secondary-color: #555b6e;
+
+    // Акценты (ссылки, кнопки)
+    --accent-color: #2f80ed;
+    --accent-hover: #5fa8ff;
+}
