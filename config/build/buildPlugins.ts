@@ -14,13 +14,13 @@ export function buildPlugins({ paths, isDev }: BuildOptions): webpack.WebpackPlu
         // Прогресс сборки
         new webpack.ProgressPlugin(),
         new MiniCssExtractPlugin({
-            filename: 'css/[name].[contenthash:8].css',
-            chunkFilename: 'css/[name].[contenthash:8].css',
+            filename: "css/[name].[contenthash:8].css",
+            chunkFilename: "css/[name].[contenthash:8].css",
         }),
         new webpack.DefinePlugin({
             __IS_DEV__: JSON.stringify(isDev)
         }),
         // Приложение без обновления страницы при разработке
         new webpack.HotModuleReplacementPlugin(),
-    ]
+    ];
 }

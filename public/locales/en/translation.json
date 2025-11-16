@@ -1,3 +1,6 @@
 {
-    "button_switch_language": "English"
+    "button_switch_language": "English",
+    "sidebar_button_toggle": "Toggle",
+    "navbar_label_main_page": "Main",
+    "navbar_label_about_page": "About"
 }

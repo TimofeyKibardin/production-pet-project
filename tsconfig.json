@@ -20,7 +20,8 @@
         // Позволяет работать с пакетами, которые используют commonjs
         "esModuleInterop": true,
         // Позволяет использовать дефолтный импорт
-        "allowSyntheticDefaultImports": true
+        "allowSyntheticDefaultImports": true,
+        "skipLibCheck": true
     },
     "ts-node": {
         "compilerOptions": {

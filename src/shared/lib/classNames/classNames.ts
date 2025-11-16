@@ -14,5 +14,5 @@ export function classNames(
             // eslint-disable-next-line @typescript-eslint/no-unused-vars
             .filter(([_, value]) => Boolean(value))
             .map(([key]) => key)
-    ].join(' ');
+    ].join(" ");
 }

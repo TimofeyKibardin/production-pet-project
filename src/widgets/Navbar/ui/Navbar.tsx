@@ -1,7 +1,9 @@
-import React from 'react';
+import React from "react";
+import {t} from "i18next";
+
+import cls from "./Navbar.module.scss";
 
 import { classNames } from "shared/lib/classNames/classNames";
-import cls from './Navbar.module.scss'
 import { AppLink, AppLinkTheme } from "shared/ui/AppLink/AppLink";
 
 
@@ -15,16 +17,16 @@ const Navbar = ({ className }: NavbarProps) => {
             <div className={cls.links}>
                 <AppLink
                     theme={AppLinkTheme.SECONDARY}
-                    to={'/'}
+                    to={"/"}
                     className={cls.mainLink}
                 >
-                    Главная
+                    {t("navbar_label_main_page")}
                 </AppLink>
                 <AppLink
                     theme={AppLinkTheme.SECONDARY}
-                    to={'/about'}
+                    to={"/about"}
                 >
-                    О сайте
+                    {t("navbar_label_about_page")}
                 </AppLink>
             </div>
         </div>

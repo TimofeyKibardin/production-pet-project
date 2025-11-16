@@ -1,8 +1,8 @@
 import { classNames } from "shared/lib/classNames/classNames";
-import cls from './ThemeSwitcher.module.scss'
+import cls from "./ThemeSwitcher.module.scss";
 import { Theme, useTheme } from "app/providers/ThemeProvider";
-import LightIcon from 'shared/assets/icons/light-mode-switch-icon.svg';
-import DarkIcon from 'shared/assets/icons/dark-mode-switch-icon.svg';
+import LightIcon from "shared/assets/icons/light-mode-switch-icon.svg";
+import DarkIcon from "shared/assets/icons/dark-mode-switch-icon.svg";
 import { Button, ThemeButton } from "shared/ui/Button/Button";
 
 

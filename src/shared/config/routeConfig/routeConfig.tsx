@@ -4,15 +4,15 @@ import { AboutPage } from "pages/AboutPage";
 
 // Перечисление роутов
 export enum AppRoutes {
-    MAIN = 'main',
-    ABOUT = 'about'
+    MAIN = "main",
+    ABOUT = "about"
 }
 
 // Пути для роутов до компонента
 export const RoutePath: Record<AppRoutes, string> = {
-    [AppRoutes.MAIN]: '/',
-    [AppRoutes.ABOUT]: '/about'
-}
+    [AppRoutes.MAIN]: "/",
+    [AppRoutes.ABOUT]: "/about"
+};
 
 // Конфигурация роутов
 export const routeConfig: Record<AppRoutes, RouteProps> = {
@@ -24,4 +24,4 @@ export const routeConfig: Record<AppRoutes, RouteProps> = {
         path: RoutePath.about,
         element: <AboutPage />
     },
-}
+};

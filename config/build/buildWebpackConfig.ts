@@ -16,7 +16,7 @@ export function buildWebpackConfig(options: BuildOptions): webpack.Configuration
         // Куда и как мы будем делать сборку приложения
         output: {
             // Наименование файла с шаблоном
-            filename: '[name].[contenthash].js',
+            filename: "[name].[contenthash].js",
             // Путь
             path: paths.build,
             // Очистка старых сборок
@@ -31,7 +31,7 @@ export function buildWebpackConfig(options: BuildOptions): webpack.Configuration
         },
         resolve: buildResolvers(options),
         // Карта файлов, чтобы можно было видеть где ошибка в каком файле
-        devtool: isDev ? 'inline-source-map' : undefined,
+        devtool: isDev ? "inline-source-map" : undefined,
         // Сервер разработки
         devServer: isDev ? buildDevServer(options) : undefined
     };
