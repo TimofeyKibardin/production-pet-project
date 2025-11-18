@@ -63,8 +63,9 @@ export default defineConfig([
             // === TS ===
             "@typescript-eslint/no-unused-vars": ["warn"],
             "@typescript-eslint/no-explicit-any": "off",
+            "max-len": ['error', { "ignoreComments": true }],
 
-            // === Import rules (минимум проблем) ===
+            // === Import rules ===
             "import/no-unresolved": "off",
             "import/extensions": "off",
 
@@ -88,7 +89,7 @@ export default defineConfig([
     },
 
     //
-    // === Markdown (lint только код-блоков) ===
+    // === Markdown ===
     //
     {
         files: ["**/*.md"],
