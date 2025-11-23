@@ -25,6 +25,14 @@ export default defineConfig([
                 ...globals.browser,
                 ...globals.node,
             },
+            overrides: [
+                {
+                    files: ["**/src/**/*.test.{ts, tsx}"],
+                    rules: {
+                        "i18next/no-literal-string": "off"
+                    }
+                }
+            ]
         },
 
         plugins: {
