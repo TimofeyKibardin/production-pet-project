@@ -23,7 +23,7 @@ export function buildPlugins({ paths, isDev }: BuildOptions): webpack.WebpackPlu
         // Приложение без обновления страницы при разработке
         new webpack.HotModuleReplacementPlugin(),
         new BundleAnalyzerPlugin({
-            openAnalyzer: isDev,
+            openAnalyzer: false
         }),
     ];
 }
