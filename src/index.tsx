@@ -8,6 +8,8 @@ import { ThemeProvider } from "app/providers/ThemeProvider";
 import { ErrorBoundary } from "app/providers/ErrorBoundary";
 
 
+
+
 render(
     <BrowserRouter>
         <ErrorBoundary>

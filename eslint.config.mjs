@@ -63,7 +63,7 @@ export default defineConfig([
             // === TS ===
             "@typescript-eslint/no-unused-vars": ["warn"],
             "@typescript-eslint/no-explicit-any": "off",
-            "max-len": ['error', { "ignoreComments": true }],
+            "max-len": ['error', { "ignoreComments": true, code: 100 }],
 
             // === Import rules ===
             "import/no-unresolved": "off",
@@ -73,7 +73,7 @@ export default defineConfig([
             "i18next/no-literal-string": ["error", {
                 markupOnly: true,
                 ignoreAttribute: ["data-testid", "to", "test-id", "role"],
-            }],
+            }]
         },
     },
 
