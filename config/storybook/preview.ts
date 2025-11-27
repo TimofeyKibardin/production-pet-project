@@ -1,4 +1,18 @@
+import {StyleDecorator} from "../../src/shared/config/storybook/StyleDecorator/StyleDecorator";
+import {ThemeDecorator} from "../../src/shared/config/storybook/ThemeDecorator/ThemeDecorator";
+import {Theme} from "../../src/app/providers/ThemeProvider";
+
 export const parameters = {
     actions: { argTypesRegex: "^on.*" },
-    controls: { expanded: true },
+    controls: {
+        matchers: {
+            color: /(background|color)$/i,
+            date: /Date$/i,
+        }
+    },
 };
+
+export const decorators = [
+    StyleDecorator,
+    ThemeDecorator(Theme.LIGHT)
+];
